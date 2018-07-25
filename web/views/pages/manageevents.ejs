@@ -1,0 +1,29 @@
+<head>
+  <title>FreeFood - My Events</title>
+</head>
+
+<body>
+  <div class='container'>
+    <br>
+    <h1>Manage My Events</h1>
+    <hr>
+
+    <table style='width: 85%'>
+      <thead>
+        <th style='width: 40%'>Location</th>
+        <th style='width: 40%'>Food</th>
+        <th style='width: 20%'>Posted At:</th>
+      </thead>
+
+      <tbody>
+        <% _.each(events, function(event) { %>
+          <tr>
+            <td style='width: 40%'><%= event.location %></td>
+            <td style='width: 40%'><%= event.food %></td>
+            <td style='width: 20%'><%= event.time %> on <%= event.date %></td>
+          </tr>
+        <5 }) %>
+      </tbody>
+    </table>
+  </div>
+</body>

@@ -1,0 +1,29 @@
+<head>
+  <title>FreeFood - Add</title>
+</head>
+
+<body>
+  <div class='container'>
+    <br>
+    <h1>Add an Event</h1>
+    <hr>
+
+    <form action='/event/create' method='post'>
+      <div class='form-group'>
+        <label for="location">Location</label>
+        <input type="text" class="form-control" name='location' id="location" placeholder="Enter Location (e.g. Frist 101)">
+      </div>
+      <div class='form-group'>
+        <label for="food">Food</label>
+        <input type="text" class="form-control" name='food' id="food" placeholder="Enter Food (e.g. Princeton Pi Pizza)">
+      </div>
+      <div class='form-group'>
+        <label for="host">Name</label>
+        <input type="text" class="form-control" name='host' id="host" placeholder="Your Name or Name of Organization (e.g. McGraw Center)">
+      </div>
+      <hr>
+      <input type='submit' value='Create Event' class='btn btn-primary'>
+    </form>
+  </div>
+  </div>
+</body>

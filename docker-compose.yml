@@ -1,0 +1,16 @@
+version: '2'
+services:
+  web:
+    container_name: "freefood_web"
+    build: ./web
+    ports:
+     - "2578:1337"
+    volumes:
+     - ./web:/app
+    links:
+     - mongodb:mongo
+  mongodb:
+    container_name: "freefood_mongo"
+    image: "mongo"
+    volumes:
+     - ./data/mongo:/data/db

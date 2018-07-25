@@ -1,0 +1,31 @@
+<head>
+  <title>FreeFood - Events</title>
+</head>
+
+<body>
+  <div class='container'>
+    <br>
+    <h1>View All Events</h1>
+
+    <table style='width: 85%'>
+      <thead>
+        <th style='width: 35%'>Location</th>
+        <th style='width: 35%'>Food</th>
+        <th style='width: 15%'>Host</th>
+        <th style='width: 15%'>Posted At:</th>
+      </thead>
+
+      <tbody>
+        <% _.each(events, function(event) { %>
+          <tr>
+            <td style='width:35%'><%= event.location %></td>
+            <td style='width:35%'><%= event.food %></td>
+            <td style='width:15%'><%= event.host %></td>
+            <td style='width:15%'><%= event.time %> on <%= event.date %></td>
+          </tr>
+          <br>
+        <% }) %>
+      </tbody>
+    </table>
+  </div>
+</body>
